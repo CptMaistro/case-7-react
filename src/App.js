@@ -4,6 +4,7 @@ import "./App.css";
 import Nav from "./Components/Nav";
 import Home from "./Components/Home";
 import Movies from "./Components/Movies";
+import Search from "./Components/Search";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
             </Route>
             <Route exact path="/Movies">
               <Movies />
+            </Route>
+            <Route exact path="/Search">
+              <Search />
             </Route>
           </Switch>
         </div>

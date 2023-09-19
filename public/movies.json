@@ -3,12 +3,14 @@
       "name": "CinemaWorld",
       "movies": [
         {
-          "title": "Movie A",
+          "title": "Real Steel",
           "duration": "120 mins",
+          "picture": "/Assets/Real Steel.jpg",
+          "description": "",
           "shows": [
             {
               "time": "2023-09-07T16:00",
-              "room": "Room 1",
+              "room": "1",
               "seats": [
                 {"seatNumber": "A1", "booked": false},
                 {"seatNumber": "A2", "booked": true},
@@ -19,60 +21,216 @@
             },
             {
               "time": "5:00 PM",
-              "room": "Room 2",
+              "room": "2",
               "seats": [
                 {"seatNumber": "B1", "booked": false},
                 {"seatNumber": "B2", "booked": true}
               ]
-            }
-          ]
-        },
-        {
-          "title": "Movie B",
-          "duration": "100 mins",
-          "shows": [
+            },
             {
-              "time": "2023-09-07T15:00",
-              "room": "Room 3",
-              "seats": [
-                {"seatNumber": "C1", "booked": true},
-                {"seatNumber": "C2", "booked": false}
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Movie C",
-          "duration": "140 mins",
-          "shows": []
-        },
-        {
-          "title": "Movie D",
-          "duration": "110 mins",
-          "shows": [
-            {
-              "time": "2023-09-07T17:00",
-              "room": "Room 2",
-              "seats": [
-                {"seatNumber": "D1", "booked": false},
-                {"seatNumber": "D2", "booked": false}
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Movie E",
-          "duration": "90 mins",
-          "shows": [
-            {
-              "time": "2023-09-07T18:00",
-              "room": "Room 1",
+              "time": "2023-09-07T16:00",
+              "room": "1",
               "seats": [
                 {"seatNumber": "A1", "booked": false},
                 {"seatNumber": "A2", "booked": true},
                 {"seatNumber": "A3", "booked": false},
                 {"seatNumber": "A4", "booked": false},
                 {"seatNumber": "A5", "booked": false}
+              ]
+            },
+            {
+              "time": "2023-09-07T16:00",
+              "room": "3",
+              "seats": [
+                {"seatNumber": "A1", "booked": false},
+                {"seatNumber": "A2", "booked": true},
+                {"seatNumber": "A3", "booked": false},
+                {"seatNumber": "A4", "booked": false}
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Howl's Moving Castle",
+          "duration": "100 mins",
+          "picture": "/Assets/Howl's Moving Castle.jpg",
+          "description": "",
+          "shows": [
+            {
+              "time": "2023-09-07T15:00",
+              "room": "3",
+              "seats": [
+                {"seatNumber": "C1", "booked": true},
+                {"seatNumber": "C2", "booked": false}
+              ]
+            },
+            {
+              "time": "2023-09-07T15:00",
+              "room": "1",
+              "seats": [
+                {"seatNumber": "C1", "booked": true},
+                {"seatNumber": "C2", "booked": false},
+                {"seatNumber": "C3", "booked": true},
+                {"seatNumber": "C4", "booked": false}
+              ]
+            },
+            {
+              "time": "2023-09-07T15:00",
+              "room": "2",
+              "seats": [
+                {"seatNumber": "C1", "booked": true},
+                {"seatNumber": "C2", "booked": false}
+              ]
+            },
+            {
+              "time": "2023-09-07T15:00",
+              "room": "3",
+              "seats": [
+                {"seatNumber": "C1", "booked": true},
+                {"seatNumber": "C2", "booked": false},
+                {"seatNumber": "C3", "booked": false}
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Taken 2",
+          "duration": "140 mins",
+          "picture": "/Assets/Taken 2.jpg",
+          "description": "",
+          "shows": [
+            {
+              "time": "2023-09-07T16:00",
+              "room": "1",
+              "seats": [
+                {"seatNumber": "A1", "booked": false},
+                {"seatNumber": "A2", "booked": true},
+                {"seatNumber": "A3", "booked": false},
+                {"seatNumber": "A4", "booked": false},
+                {"seatNumber": "A5", "booked": false}
+              ]
+            },
+            {
+              "time": "5:00 PM",
+              "room": "2",
+              "seats": [
+                {"seatNumber": "B1", "booked": false},
+                {"seatNumber": "B2", "booked": true}
+              ]
+            },
+            {
+              "time": "2023-09-07T16:00",
+              "room": "1",
+              "seats": [
+                {"seatNumber": "A1", "booked": false},
+                {"seatNumber": "A2", "booked": true},
+                {"seatNumber": "A3", "booked": false},
+                {"seatNumber": "A4", "booked": false},
+                {"seatNumber": "A5", "booked": false}
+              ]
+            },
+            {
+              "time": "2023-09-07T16:00",
+              "room": "3",
+              "seats": [
+                {"seatNumber": "A1", "booked": false},
+                {"seatNumber": "A2", "booked": true},
+                {"seatNumber": "A3", "booked": false},
+                {"seatNumber": "A4", "booked": false}
+              ]
+            }
+          ]
+        },
+        {
+          "title": "John Wick: Chapter 4",
+          "duration": "110 mins",
+          "picture": "/Assets/John Wick Chapter 4.jpg",
+          "description": "",
+          "shows": [
+            {
+              "time": "2023-09-07T17:00",
+              "room": "2",
+              "seats": [
+                {"seatNumber": "D1", "booked": false},
+                {"seatNumber": "D2", "booked": false}
+              ]
+            },
+            {
+              "time": "2023-09-07T18:00",
+              "room": "1",
+              "seats": [
+                {"seatNumber": "A1", "booked": false},
+                {"seatNumber": "A2", "booked": true},
+                {"seatNumber": "A3", "booked": false},
+                {"seatNumber": "A4", "booked": false},
+                {"seatNumber": "A5", "booked": false}
+              ]
+            },            {
+              "time": "2023-09-07T17:00",
+              "room": "3",
+              "seats": [
+                {"seatNumber": "D1", "booked": true},
+                {"seatNumber": "D2", "booked": false}
+              ]
+            },
+            {
+              "time": "2023-09-07T18:00",
+              "room": "1",
+              "seats": [
+                {"seatNumber": "A1", "booked": false},
+                {"seatNumber": "A2", "booked": true},
+                {"seatNumber": "A3", "booked": false},
+                {"seatNumber": "A4", "booked": false},
+                {"seatNumber": "A5", "booked": false}
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Ip man 3",
+          "duration": "90 mins",
+          "picture": "/Assets/Ip Man 3.jpg",
+          "description": "",
+          "shows": [
+            {
+              "time": "2023-09-07T18:00",
+              "room": "1",
+              "seats": [
+                {"seatNumber": "A1", "booked": false},
+                {"seatNumber": "A2", "booked": true},
+                {"seatNumber": "A3", "booked": false},
+                {"seatNumber": "A4", "booked": false},
+                {"seatNumber": "A5", "booked": false}
+              ]
+            },
+            {
+              "time": "2023-09-07T18:00",
+              "room": "1",
+              "seats": [
+                {"seatNumber": "A1", "booked": false},
+                {"seatNumber": "A2", "booked": true},
+                {"seatNumber": "A3", "booked": false},
+                {"seatNumber": "A4", "booked": false},
+                {"seatNumber": "A5", "booked": false}
+              ]
+            },
+            {
+              "time": "2023-09-07T18:00",
+              "room": "3",
+              "seats": [
+                {"seatNumber": "A1", "booked": false},
+                {"seatNumber": "A2", "booked": true},
+                {"seatNumber": "A3", "booked": false},
+                {"seatNumber": "A4", "booked": false},
+                {"seatNumber": "A5", "booked": false}
+              ]
+            },
+            {
+              "time": "2023-09-07T17:00",
+              "room": "2",
+              "seats": [
+                {"seatNumber": "D1", "booked": false},
+                {"seatNumber": "D2", "booked": false}
               ]
             }
           ]

@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.moviesCont img{
+  width: 220px;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.moviesCont ul{
+  list-style: none;
+}
+
+.moviesCard{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 250px;
+}
+
+.moviesCard li {
+ flex: 1;
+}
+

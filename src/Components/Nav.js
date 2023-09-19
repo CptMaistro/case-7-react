@@ -4,6 +4,7 @@ const Nav = () => {
             <div className="links">
                 <a href="/">Home</a>
                 <a href="/Movies">Movies</a>
+                <a href="/search">Search</a>
             </div>
         </nav>
     );

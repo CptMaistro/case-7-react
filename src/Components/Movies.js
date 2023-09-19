@@ -45,12 +45,13 @@ function Movies() {
   }
 
   return (
-    <div>
-      <h1>{cinemaData.name}</h1>
+    <div className='moviesCont'>
       <h2>Movies:</h2>
-      <ul>
+      <ul className='movieCard'>
+        <div>
         {cinemaData.movies.map((movie, index) => (
           <li key={index}>
+            <img src={movie.picture} alt=''/>
             <h3>{movie.title}</h3>
             <p>Duration: {movie.duration}</p>
             <h4>Showtimes:</h4>
@@ -72,9 +73,10 @@ function Movies() {
             </ul>
           </li>
         ))}
+        </div>
       </ul>
     </div>
   );
 }
 
-export default Movies;;
+export default Movies;
