@@ -1,24 +1,24 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./App.css";
 
-import Nav from './Components/Nav';
-import Home from './Components/Home';
-import Movies from './Components/Movies';
+import Nav from "./Components/Nav";
+import Home from "./Components/Home";
+import Movies from "./Components/Movies";
 
 function App() {
   return (
-    <Router >
+    <Router forceRefresh={true}>
       <div className="Navbar">
         <Nav />
-        <div className='navCont'>
-          <switch>
+        <div className="navCont">
+          <Switch>
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path='/Movies'>
+            <Route exact path="/Movies">
               <Movies />
             </Route>
-          </switch>
+          </Switch>
         </div>
       </div>
     </Router>

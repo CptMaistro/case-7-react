@@ -1,37 +1,80 @@
-import cinemaData from '../movies.json';
+import React, { useState, useEffect } from 'react';
+// import './App.css';
 
-  function Movies() {
-    // Extract the "movies" array from the imported JSON data
-    const movies = cinemaData.cinema.movies;
-  
-    return (
-      <div>
-        <h1>Movies</h1>
-        <ul>
-          {movies.map((movie, index) => (
-            <li key={index}>
-              <h2>{movie.title}</h2>
-              <p>Duration: {movie.duration}</p>
-              {movie.shows.length > 0 ? (
-                <div>
-                  <h3>Showtimes:</h3>
+function Movies() {
+  // State to store cinema data
+  const [cinemaData, setCinemaData] = useState(null);
+
+  // State to track if application is loading
+  const [loading, setLoading] = useState(true);
+
+  // State to track any error message
+  const [error, setError] = useState(null);
+
+  // Fetch the JSON data when the component mounts
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        // Fetch the JSON data from the local file 'cinema.json'
+        const response = await fetch('../movies.json');
+
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+
+        const data = await response.json();
+        setCinemaData(data.cinema); 
+      } catch (err) {
+        setError(err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  // Check if loading; if true, display a loading message
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  // Check if there is an error; if true, display it
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+
+  return (
+    <div>
+      <h1>{cinemaData.name}</h1>
+      <h2>Movies:</h2>
+      <ul>
+        {cinemaData.movies.map((movie, index) => (
+          <li key={index}>
+            <h3>{movie.title}</h3>
+            <p>Duration: {movie.duration}</p>
+            <h4>Showtimes:</h4>
+            <ul>
+              {movie.shows.map((show, showIndex) => (
+                <li key={showIndex}>
+                  <p>Time: {show.time}</p>
+                  <p>Room: {show.room}</p>
+                  <p>Seats:</p>
                   <ul>
-                    {movie.shows.map((show, showIndex) => (
-                      <li key={showIndex}>
-                        <p>Time: {show.time}</p>
-                        <p>Room: {show.room}</p>
+                    {show.seats.map((seat, seatIndex) => (
+                      <li key={seatIndex}>
+                        Seat {seat.seatNumber} - {seat.booked ? "Booked" : "Available"}
                       </li>
                     ))}
                   </ul>
-                </div>
-              ) : (
-                <p>No showtimes available</p>
-              )}
-            </li>
-          ))}
-        </ul>
-      </div>
-    );
-  }
-  
-  export default Movies;
+                </li>
+              ))}
+            </ul>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default Movies;;

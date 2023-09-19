@@ -7,7 +7,7 @@
           "duration": "120 mins",
           "shows": [
             {
-              "time": "2023-09-07T16:00:00.000Z",
+              "time": "2023-09-07T16:00",
               "room": "Room 1",
               "seats": [
                 {"seatNumber": "A1", "booked": false},
@@ -32,7 +32,7 @@
           "duration": "100 mins",
           "shows": [
             {
-              "time": "2023-09-07T15:00:00.000Z",
+              "time": "2023-09-07T15:00",
               "room": "Room 3",
               "seats": [
                 {"seatNumber": "C1", "booked": true},
@@ -51,7 +51,7 @@
           "duration": "110 mins",
           "shows": [
             {
-              "time": "2023-09-07T17:00:00.000Z",
+              "time": "2023-09-07T17:00",
               "room": "Room 2",
               "seats": [
                 {"seatNumber": "D1", "booked": false},
@@ -65,7 +65,7 @@
           "duration": "90 mins",
           "shows": [
             {
-              "time": "2023-09-07T18:00:00.000Z",
+              "time": "2023-09-07T18:00",
               "room": "Room 1",
               "seats": [
                 {"seatNumber": "A1", "booked": false},
