@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
 function Search() {
+  // State to hold the search query entered by the user
   const [searchQuery, setSearchQuery] = useState('');
+  // State to store the list of movies
   const [movies, setMovies] = useState([]);
 
+  // useEffect is used to fetch movie data
   useEffect(() => {
     // Fetch the JSON data from the public directory
     fetch('/movies.json')
@@ -15,6 +18,7 @@ function Search() {
   // Function to handle search input changes
   const handleSearchChange = (event) => {
     const query = event.target.value.toLowerCase();
+    // Updating the searchQuery state with the user's query
     setSearchQuery(query);
   };
 

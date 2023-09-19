@@ -1,3 +1,4 @@
+// Importing necessary modules and components from React and react-router-dom
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 
@@ -8,6 +9,7 @@ import Search from "./Components/Search";
 
 function App() {
   return (
+    // Setting up the React Router with BrowserRouter
     <Router forceRefresh={true}>
       <div className="Navbar">
         <Nav />
