@@ -5,11 +5,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(96, 0, 0, 0.829);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.homePage h1{
+  margin-left: 20px;
+}
+
+.homePage p{
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  margin: 80px auto;
 }
 
 .moviesCont img{
@@ -23,6 +35,10 @@ code {
   list-style: none;
 }
 
+.moviesCont h2{
+  margin-left: 20px;
+}
+
 .moviesCard{
   display: flex;
   flex-direction: row;
@@ -34,3 +50,17 @@ code {
  flex: 1;
 }
 
+.links a{
+  margin-left: 10px;
+  color: white;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.search-cont {
+  margin: 20px 20px auto;
+}
+
+.search-cont input{
+  margin-bottom: 10px;
+}

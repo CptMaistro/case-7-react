@@ -9,25 +9,25 @@ import Search from "./Components/Search";
 
 function App() {
   return (
-    // Setting up the React Router with BrowserRouter
-    <Router forceRefresh={true}>
-      <div className="Navbar">
-        <Nav />
-        <div className="navCont">
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route exact path="/Movies">
-              <Movies />
-            </Route>
-            <Route exact path="/Search">
-              <Search />
-            </Route>
-          </Switch>
+    // Router is setting up the React Router with BrowserRouter
+      <Router forceRefresh={true}>
+        <div className="Navbar">
+          <Nav />
+          <div className="navCont">
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route exact path="/Movies">
+                <Movies />
+              </Route>
+              <Route exact path="/Search">
+                <Search />
+              </Route>
+            </Switch>
+          </div>
         </div>
-      </div>
-    </Router>
+      </Router>
   );
 }
 

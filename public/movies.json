@@ -33,7 +33,7 @@
               "seats": [
                 {"seatNumber": "A1", "booked": false},
                 {"seatNumber": "A2", "booked": true},
-                {"seatNumber": "A3", "booked": false},
+                {"seatNumber": "A3", "booked": true},
                 {"seatNumber": "A4", "booked": false},
                 {"seatNumber": "A5", "booked": false}
               ]
@@ -106,7 +106,7 @@
                 {"seatNumber": "A1", "booked": false},
                 {"seatNumber": "A2", "booked": true},
                 {"seatNumber": "A3", "booked": false},
-                {"seatNumber": "A4", "booked": false},
+                {"seatNumber": "A4", "booked": true},
                 {"seatNumber": "A5", "booked": false}
               ]
             },
@@ -122,7 +122,7 @@
               "time": "2023-09-07T16:00",
               "room": "1",
               "seats": [
-                {"seatNumber": "A1", "booked": false},
+                {"seatNumber": "A1", "booked": true},
                 {"seatNumber": "A2", "booked": true},
                 {"seatNumber": "A3", "booked": false},
                 {"seatNumber": "A4", "booked": false},
@@ -162,8 +162,8 @@
                 {"seatNumber": "A1", "booked": false},
                 {"seatNumber": "A2", "booked": true},
                 {"seatNumber": "A3", "booked": false},
-                {"seatNumber": "A4", "booked": false},
-                {"seatNumber": "A5", "booked": false}
+                {"seatNumber": "A4", "booked": true},
+                {"seatNumber": "A5", "booked": true}
               ]
             },            {
               "time": "2023-09-07T17:00",
@@ -208,7 +208,7 @@
               "room": "1",
               "seats": [
                 {"seatNumber": "A1", "booked": false},
-                {"seatNumber": "A2", "booked": true},
+                {"seatNumber": "A2", "booked": false},
                 {"seatNumber": "A3", "booked": false},
                 {"seatNumber": "A4", "booked": false},
                 {"seatNumber": "A5", "booked": false}
@@ -220,8 +220,8 @@
               "seats": [
                 {"seatNumber": "A1", "booked": false},
                 {"seatNumber": "A2", "booked": true},
-                {"seatNumber": "A3", "booked": false},
-                {"seatNumber": "A4", "booked": false},
+                {"seatNumber": "A3", "booked": true},
+                {"seatNumber": "A4", "booked": true},
                 {"seatNumber": "A5", "booked": false}
               ]
             },
