@@ -22,6 +22,8 @@ code {
   max-width: 800px;
   width: 100%;
   margin: 80px auto;
+  background-color: rgba(128, 128, 128, 0.641);
+  border-radius: 3px;
 }
 
 .moviesCont img{
@@ -37,6 +39,55 @@ code {
 
 .moviesCont h2{
   margin-left: 20px;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  position: relative;
+  /* background-color: rgba(169, 169, 169, 0.6); */
+  /* max-width: 400px; */
+}
+
+/* Create a pseudo-element for the background color */
+.movie-info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1250px; /* Set the width for the background color */
+  background-color: rgba(169, 169, 169, 0.6); /* Set the background color here */
+  border-radius: 3px;
+  z-index: -1;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+.movie-info img{
+  margin-left: 25px;
+  border-radius: 5px;
+}
+
+.movie-info p{
+  margin-left: 25px;
+  border-right: 2px solid #000;
+  border-left: 2px solid #000;
+  /* background-color: rgba(169, 169, 169, 0.6); */
+}
+
+.movie-info h3{
+  margin-left: 25px;
+  border-right: 2px solid #000;
+  border-left: 2px solid #000;
+  /* background-color: rgba(169, 169, 169, 0.6); */
+}
+
+.movie-info h4{
+  margin-left: 25px;
+  /* background-color: rgba(169, 169, 169, 0.6); */
 }
 
 .moviesCard{

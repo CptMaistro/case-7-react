@@ -48,7 +48,7 @@ function Movies() {
     <div className='moviesCont'>
       <h2>Movies:</h2>
       <ul className='movieCard'>
-        <div>
+        <div className='movie-info'>
         {cinemaData.movies.map((movie, index) => (
           <li key={index}>
             <img src={movie.picture} alt=''/>
