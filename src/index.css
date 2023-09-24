@@ -26,6 +26,11 @@ code {
   border-radius: 3px;
 }
 
+.navBg {
+  background-color: #00000050;
+  height: 40px;
+}
+
 .moviesCont img{
   width: 220px;
   height: 350px;
