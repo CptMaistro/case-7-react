@@ -45,6 +45,11 @@ function Movies() {
     return <div>Error: {error.message}</div>;
   }
 
+  function bookedFunction() {
+    // Code to be executed when the button is clicked
+    alert("You have booked a movie, hope you enjoy!");
+  }
+
   return (
     <div className='moviesCont'>
       <h2>Movies:</h2>
@@ -61,7 +66,7 @@ function Movies() {
                 <li key={showIndex}>
                   <p>Time: {show.time}</p>
                   <p>Room: {show.room}</p>
-                  <p>Seats:</p>
+                  <p>Seats:</p><button onClick={bookedFunction} className='bookedF'>Booking: Click here!</button>
                   <ul>
                     {show.seats.map((seat, seatIndex) => (
                       <li key={seatIndex}>
